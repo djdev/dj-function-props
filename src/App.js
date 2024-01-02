@@ -27,7 +27,7 @@ function Badge({ user, style }) {
         <Name name={user.name} />
         <Handle handle={user.handle} />
 
-        <button onClick={() => alert('Friend added!')}>Add Friend</button>
+        <button onClick={handleClick}>Add Friend</button>
       </div>
     </div>
   );
@@ -50,6 +50,7 @@ export default function App() {
         gap: '16px',
         textAlign: 'center',
       }}
+      handleClick={() => alert('Friend added!')}
     />
   );
 }
