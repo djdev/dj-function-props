@@ -19,7 +19,7 @@ function Handle({ handle }) {
   return <p>@{handle}</p>;
 }
 
-function Badge({ user, style }) {
+function Badge({ user, style, handleClick }) {
   return (
     <div style={style}>
       <Avatar name={user.name} img={user.img} />
